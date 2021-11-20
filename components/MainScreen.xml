@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="mainscreen" extends="Scene">
+    <script type="text/brightscript" uri="MainScreen.brs" />
+    <children> 
+        <Button
+        id = "startBtn"
+        text = "" 
+        minWidth = "500"
+        maxWidth = "500"
+        height = "64"
+        iconUri = ""
+        focusedIconUri =""
+        translation="[710,508]" >
+            <Label width="500"         
+            height="64"
+            horizAlign="center"
+            vertAlign="center"
+            color="0x000000FF"
+            text="start the game"/>
+        </Button> 
+    </children>
+</component>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="Game" extends="Group"  initialFocus="ship">
+    <script type="text/brightscript" uri="Game.brs" />
+    <children> 
+        <Label
+            width="200"
+            translation="[50,50]"
+            text="score:"
+            font = "font:LargeBoldSystemFont" 
+            color="0x00FF00FF"
+        />  
+        <Label
+            id="scoreLabel" 
+            translation="[250,55]"
+            text="000000"
+            color="0x00FF00FF"
+        /> 
+        <Poster
+            id="ship"
+            loadDisplayMode="scaleToFit" 
+            uri="pkg:/images/ship.png"
+            loadWidth="100"
+            loadHeight="106"
+            translation="[910,930]"
+        />
+    </children>
+</component>
