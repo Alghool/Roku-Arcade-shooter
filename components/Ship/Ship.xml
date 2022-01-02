@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="Ship" extends="Poster" >
+    <interface>
+        <function name="moveRight" />
+        <function name="moveLeft" />
+        <function name="fire" />
+    </interface>
+    <script type="text/brightscript" uri="Ship.brs" />
+    <children> 
+
+    </children>
+</component>

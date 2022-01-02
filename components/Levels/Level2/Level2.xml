@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="Level2" extends="BaseLevel">
+    <script type="text/brightscript" uri="Level2.brs" />
+    <children> 
+
+    </children>
+</component>

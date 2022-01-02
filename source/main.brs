@@ -4,13 +4,6 @@ sub Main()
     m.port = createObject("roMessagePort")
     screen.setMessagePort(m.port)
 
-    device = createObject("roDeviceInfo") 
-    m.global = screen.getGlobalNode()
-    m.global.addFields({
-        deviceHeight: device.GetDisplaySize().h,
-        deviceWidth: device.GetDisplaySize().w 
-    }) 
-
     scene = screen.createScene("mainScreen")
     screen.show()
 

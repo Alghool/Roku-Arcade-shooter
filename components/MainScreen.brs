@@ -5,6 +5,13 @@ sub Init()
     m.startBtn.setFocus(true)
     m.startBtn.observeField("buttonSelected","startTheGame")
 
+    deviceResolution = getResolution() 
+    m.global.addFields({
+        deviceHeight: deviceResolution.height,
+        deviceWidth: deviceResolution.width,
+        borderWidth: 50 
+    }) 
+
     m.dotsArr = []
     m.indexRef = 1
     ' timer
@@ -22,8 +29,8 @@ sub dotsHandling()
         m.newDot.height = 5
         m.newDot.color ="0xFFFFFFFF"
         m.newDot.id = m.indexRef.toStr() 
-        x = rnd(1920)
-        y = rnd(1080) 
+        x = rnd(m.global.deviceWidth)
+        y = rnd(m.global.deviceHeight) 
         m.newDot.translation = [x,y]
         m.dotsArr.push(m.newDot)
         
@@ -33,7 +40,7 @@ sub dotsHandling()
         newDotAnimation.easeFunction = "linear"
         interpolator = newDotAnimation.createChild("Vector2DFieldInterpolator")
         interpolator.key = [0.0, 1.0]
-        interpolator.keyValue = [[x,y],[rnd(1920),rnd(1080)]]
+        interpolator.keyValue = [[x,y],[rnd(m.global.deviceWidth),rnd(m.global.deviceHeight)]]
         interpolator.fieldToInterp = m.indexRef.toStr()+".translation" 
 
         newDotAnimation.control = "start"

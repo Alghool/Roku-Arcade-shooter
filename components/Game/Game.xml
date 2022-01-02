@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<component name="Game" extends="Group"  initialFocus="ship">
+<component name="Game" extends="Group" >
     <script type="text/brightscript" uri="Game.brs" />
     <children> 
         <Label
@@ -15,13 +15,10 @@
             translation="[250,55]"
             text="000000"
             color="0x00FF00FF"
-        /> 
-        <Poster
+        />  
+         <Ship
             id="ship"
-            loadDisplayMode="scaleToFit" 
-            uri="pkg:/images/ship.png"
-            loadWidth="100"
-            loadHeight="106"
+            loadDisplayMode="scaleToFit"
             translation="[910,930]"
         />
     </children>
